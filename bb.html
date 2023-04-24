@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+            .imgcontainer{
+                           position: relative;
+                           width: 300px;
+                           height: 300px;
+                          }
+            .img1  {
+                   position: absolute;
+                   z-index: 1;
+                   width: 100%;
+                   top: 0;
+                   left: 0;
+                  }
+            .img2{
+                   position: absolute;
+                   z-index: 2;    /* Place this image in front of the img1 */
+                   width: 100%;
+                   top: 100px;
+                   left: 100px;
+                  }
+		body {
+			background-color: black;
+			color: white;
+			font-family: Arial, sans-serif;
+		}
+		h1 { 
+                        margin-top: 30px;
+			      margin-left: 10px;
+                        letter-spacing: 1px;
+                        line-height: 5px;
+		}
+		table {
+			      max-width: 700px;
+                        margin-right: 230px;
+                        margin-top: -240px;
+                        float: right;
+		}
+		th, td {
+			padding: 15px;
+			text-align: left;
+		}
+		th {
+			font-weight: bold;
+		}
+		img {
+			max-width: 450px;
+			height: auto;
+                        margin-left: 150px;
+                        margin-top: 55px;
+                        border-radius: 50px;
+                        float: left;
+		}
+		@media(max-width: 991px) {
+			img { 
+				margin-left: 20px;
+				margin-top: 20px;
+		}
+		    table{
+				margin-right: 150px;
+                margin-top: -270px;
+			}
+	}
+	@media(max-width: 767px){
+		img { 
+			max-width: 370px;
+				margin-left: 40px;
+				margin-top: 70px;
+		}
+		    table{
+
+				margin-right: 80px;
+                margin-top: -250px;
+			}
+	}
+	@media(max-width: 479px  ) {
+		img { 
+			max-width: 300px;
+				margin-left: 90px;
+				margin-top: 70px;
+		}
+		    table{
+
+				margin-right: 160px;
+                margin-top: 30px;
+			}
+
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div>
+			<h1>Stats and</h1>
+                        <h1>&nbsp;&nbsp;&nbsp;&nbsp;measurement</h1>
+                  <div class="imgcontainer">
+			<img src="model.jpeg" alt="My Photo">
+                  </div>
+			<table>
+				<tr>
+					<th>HEIGHT</th>
+					<td>5'10"</td>
+				</tr>
+				<tr>
+					<th>BUST</th>
+					<td>34</td>
+				</tr>
+				<tr>
+					<th>WAIST</th>
+					<td>26</td>
+				</tr>
+				<tr>
+					<th>HIPS</th>
+					<td>34</td>
+				</tr>
+				<tr>
+					<th>SHOES</th>
+					<td>US 8</td>
+				</tr>
+				<tr>
+					<th>DRESS</th>
+					<td>US4</td>
+				</tr>
+                                <tr>
+					<th>HAIR</th>
+					<td>BLACK</td>
+				</tr>
+                                <tr>
+					<th>EYES</th>
+					<td>BLACK</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
